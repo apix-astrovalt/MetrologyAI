@@ -1,0 +1,197 @@
+.image-uploader {
+  width: 100%;
+}
+
+/* =========================
+   UPLOAD AREA
+========================= */
+
+.upload-area {
+  display: block;
+
+  border: 2px dashed #334155;
+  border-radius: 16px;
+
+  padding: 64px 20px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.upload-area:hover {
+  border-color: #3b82f6;
+  background: rgba(30, 41, 59, 0.5);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.upload-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.upload-title {
+  margin: 0 0 8px;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.upload-description {
+  margin: 0 0 24px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+/* =========================
+   CHOOSE BUTTON
+========================= */
+
+.upload-button {
+  display: inline-block;
+
+  background: #2563eb;
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: background 0.2s ease;
+}
+
+.upload-button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   FILE INPUT
+========================= */
+
+.upload-area input[type="file"] {
+  display: none;
+}
+
+/* =========================
+   IMAGE PREVIEW
+========================= */
+
+.image-preview-container {
+  background: #020617;
+
+  border: 1px solid #1e293b;
+
+  border-radius: 12px;
+
+  padding: 16px;
+}
+
+.image-preview {
+  width: 100%;
+
+  max-height: 500px;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+}
+
+/* =========================
+   FILE INFO
+========================= */
+
+.file-info {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-top: 16px;
+}
+
+.file-name {
+  margin: 0;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  word-break: break-word;
+}
+
+.file-status {
+  margin: 4px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+/* =========================
+   REMOVE BUTTON
+========================= */
+
+.remove-button {
+  border: none;
+
+  padding: 9px 16px;
+
+  border-radius: 8px;
+
+  background: #dc2626;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.remove-button:hover {
+  background: #b91c1c;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px) {
+  .upload-area {
+    padding: 45px 15px;
+  }
+
+  .upload-icon {
+    font-size: 48px;
+  }
+
+  .file-info {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .remove-button {
+    width: 100%;
+  }
+}

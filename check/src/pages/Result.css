@@ -1,0 +1,505 @@
+/* =========================
+   RESULT PAGE
+========================= */
+
+.result-page {
+  min-height: 100vh;
+  background: #020617;
+  color: #ffffff;
+}
+
+.result-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 0 50px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.result-back {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.result-back:hover {
+  color: #ffffff;
+}
+
+.result-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.result-subtitle {
+  margin-top: 6px;
+  color: #7f91b2;
+  font-size: 13px;
+}
+
+.result-report-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.result-report-button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   SCORE CARD
+========================= */
+
+.result-score-card {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 28px;
+  align-items: center;
+
+  background: #111827;
+  border: 1px solid #26334d;
+  border-radius: 12px;
+
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+.result-score-section {
+  text-align: center;
+  border-right: 1px solid #26334d;
+  padding-right: 24px;
+}
+
+.result-score {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4ade80;
+}
+
+.result-score-label {
+  margin: 5px 0 0;
+  color: #71809d;
+  font-size: 10px;
+}
+
+.result-summary {
+  width: 100%;
+}
+
+.result-summary-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.result-summary-icon {
+  font-size: 20px;
+}
+
+.result-summary-title h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.result-summary-title p {
+  margin: 4px 0 0;
+  color: #71809d;
+  font-size: 11px;
+}
+
+.result-progress {
+  width: 100%;
+  height: 7px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.result-progress-fill {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 10px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.result-card {
+  background: #111827;
+  border: 1px solid #26334d;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.result-card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #26334d;
+}
+
+.result-card-header h2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* =========================
+   PRODUCT INFORMATION
+========================= */
+
+.result-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 16px;
+}
+
+.result-product-item {
+  background: #020617;
+  border: 1px solid #26334d;
+  border-radius: 8px;
+  padding: 13px;
+}
+
+.result-product-item p {
+  margin: 0 0 5px;
+  color: #71809d;
+  font-size: 10px;
+}
+
+.result-product-item strong {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* =========================
+   COMPLIANCE CHECKS
+========================= */
+
+.result-checks {
+  padding: 0 20px;
+}
+
+.result-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 0;
+  border-bottom: 1px solid #26334d;
+}
+
+.result-check:last-child {
+  border-bottom: none;
+}
+
+.result-check-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.result-check-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.result-check-icon.pass {
+  background: #06352d;
+  color: #22c55e;
+}
+
+.result-check-icon.fail {
+  background: #351622;
+  color: #ef4444;
+}
+
+.result-check h3 {
+  margin: 0;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+.result-check p {
+  margin: 4px 0 0;
+  color: #71809d;
+  font-size: 10px;
+  max-width: 700px;
+}
+
+.result-check-status {
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.result-check-status.pass {
+  background: #06352d;
+  color: #22c55e;
+}
+
+.result-check-status.fail {
+  background: #351622;
+  color: #ef4444;
+}
+
+/* =========================
+   RECOMMENDED ACTION
+========================= */
+
+.result-action {
+  background: #111827;
+  border: 1px solid #725d13;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.result-action h2 {
+  margin: 0 0 8px;
+  color: #facc15;
+  font-size: 14px;
+}
+
+.result-action p {
+  margin: 0;
+  color: #a8b4c7;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================
+   REPORT INFO
+========================= */
+
+.result-report-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.result-report-info > div {
+  background: #10182a;
+  border: 1px solid #26334d;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.result-report-info span {
+  display: block;
+  font-size: 11px;
+  color: #71809d;
+  margin-bottom: 6px;
+}
+
+.result-report-info strong {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* =========================
+   SUCCESS
+========================= */
+
+.result-success {
+  margin-top: 16px;
+  padding: 20px;
+  border: 1px solid #155e43;
+  border-radius: 10px;
+  background: #0c211d;
+}
+
+.result-success h2 {
+  margin: 0 0 8px;
+  color: #4ade80;
+  font-size: 16px;
+}
+
+.result-success p {
+  margin: 0;
+  color: #8fa1bd;
+  font-size: 13px;
+}
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.result-disclaimer {
+  text-align: center;
+  margin: 20px 0 0;
+  color: #52617a;
+  font-size: 10px;
+}
+
+/* =========================
+   PRINT FOOTER
+========================= */
+
+.result-print-footer {
+  display: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .result-container {
+    width: 94%;
+    padding-top: 20px;
+  }
+
+  .result-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .result-title {
+    font-size: 25px;
+  }
+
+  .result-report-button {
+    align-self: flex-start;
+  }
+
+  .result-score-card {
+    grid-template-columns: 1fr;
+  }
+
+  .result-score-section {
+    border-right: none;
+    border-bottom: 1px solid #26334d;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .result-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-check {
+    gap: 10px;
+  }
+
+  .result-check-status {
+    flex-shrink: 0;
+  }
+
+  .result-report-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   PRINT REPORT
+========================= */
+
+@media print {
+
+  .result-page {
+    background: white !important;
+    color: black !important;
+  }
+
+  .result-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .result-header {
+    border-bottom: 2px solid #222;
+    padding-bottom: 15px;
+  }
+
+  .result-back,
+  .result-report-button {
+    display: none !important;
+  }
+
+  .result-card,
+  .result-score-card,
+  .result-action,
+  .result-success,
+  .result-report-info > div {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+
+  .result-title,
+  .result-card-header h2,
+  .result-check h3,
+  .result-product-item strong {
+    color: black !important;
+  }
+
+  .result-subtitle,
+  .result-check p,
+  .result-product-item p,
+  .result-disclaimer,
+  .result-report-info span {
+    color: #555 !important;
+  }
+
+  .result-print-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    color: #555;
+    font-size: 11px;
+  }
+
+  .result-print-footer strong {
+    color: #222;
+    font-size: 14px;
+  }
+
+  .result-progress {
+    border: 1px solid #ccc;
+  }
+
+  .result-progress-fill,
+  .result-check-icon,
+  .result-check-status {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

@@ -1,0 +1,85 @@
+/* ================================
+   Global App Styles
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #020617;
+  color: white;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ================================
+   Scrollbar
+================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ================================
+   Selection
+================================ */
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+/* ================================
+   Image
+================================ */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ================================
+   File Input
+================================ */
+
+input[type="file"] {
+  display: none;
+}
+
+/* ================================
+   Smooth Transitions
+================================ */
+
+button,
+a {
+  transition: all 0.2s ease;
+}

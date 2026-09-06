@@ -1,0 +1,251 @@
+/* =========================
+   SCAN PAGE
+========================= */
+
+.scan-page {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+}
+
+.scan-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.scan-header {
+  margin-bottom: 32px;
+}
+
+.scan-back {
+  display: inline-block;
+
+  border: none;
+  background: none;
+
+  color: #94a3b8;
+
+  padding: 0;
+  margin-bottom: 24px;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.scan-back:hover {
+  color: white;
+}
+
+.scan-title {
+  margin: 0;
+
+  color: white;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.scan-description {
+  margin: 8px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================
+   UPLOAD CARD
+========================= */
+
+.scan-upload-card {
+  background: #0f172a;
+
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+
+  padding: 32px;
+}
+
+/* =========================
+   ANALYZE BUTTON
+========================= */
+
+.scan-analyze-button {
+  width: 100%;
+
+  margin-top: 24px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #16a34a;
+  color: white;
+
+  padding: 16px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.scan-analyze-button:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+.scan-analyze-button:active {
+  transform: translateY(0);
+}
+
+.scan-analyze-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   INFO CARDS
+========================= */
+
+.scan-info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.scan-info-card {
+  background: #0f172a;
+
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+
+  padding: 20px;
+
+  transition: all 0.2s ease;
+}
+
+.scan-info-card:hover {
+  border-color: #334155;
+  transform: translateY(-2px);
+}
+
+.scan-info-icon {
+  font-size: 26px;
+
+  margin-bottom: 12px;
+}
+
+.scan-info-title {
+  margin: 0;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.scan-info-description {
+  margin: 6px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================
+   TIPS
+========================= */
+
+.scan-tips {
+  margin-top: 24px;
+
+  background: rgba(37, 99, 235, 0.06);
+
+  border: 1px solid rgba(37, 99, 235, 0.2);
+
+  border-radius: 14px;
+
+  padding: 20px;
+}
+
+.scan-tips-title {
+  margin: 0 0 10px;
+
+  color: #60a5fa;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.scan-tips-list {
+  margin: 0;
+
+  padding-left: 20px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.scan-disclaimer {
+  margin: 24px 0 0;
+
+  color: #475569;
+
+  text-align: center;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .scan-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .scan-container {
+    padding: 30px 16px;
+  }
+
+  .scan-title {
+    font-size: 30px;
+  }
+
+  .scan-upload-card {
+    padding: 20px;
+  }
+}
