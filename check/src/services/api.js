@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://metrologyai.onrender.com";
 
 // Analyze product image
 export const analyzeProduct = async (imageFile) => {
